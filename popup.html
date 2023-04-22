@@ -7,21 +7,29 @@
     <title>Title Page</title>
 
     <!-- Bootstrap CSS -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      rel="stylesheet"
-    />
+    <link href="css/popup.css" rel="stylesheet" />
   </head>
   <body>
-    <h1 class="text-center">Hello World</h1>
     <div class="bodyWrapper">
+      <h3 class="text">Translator Extension</h3>
       <div class="searchInput">
-        <form>
-          <input type="text" placeholder="Nhập từ cần tìm kiếm vào đây!" />
-          <button type="submit"><i class="fa fa-search"></i></button>
+        <form class="searchInputForm">
+          <input
+            type="text"
+            id="searchTextInput"
+            placeholder="Mời nhập từ cần tra..."
+          />
+          <button type="button" id="searchBtn">
+            <!-- <img src="/images/icons8-search.svg" alt="search img" /> -->
+            Search
+          </button>
         </form>
+      </div>
+      <div class="showValueDiv">
+        <p id="showValue"></p>
       </div>
     </div>
   </body>
-  <script type="text/javascript" src="www.turnjs.com/lib/turn.min.js "></script>
+  <!-- <script type="text/javascript" src="www.turnjs.com/lib/turn.min.js "></script> -->
+  <script type="text/javascript" src="contentPopUp.js"></script>
 </html>
